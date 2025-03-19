@@ -26,15 +26,14 @@
       "dest": "backend/src/server.ts"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "frontend/$1"
+      "dest": "/index.html"
     }
   ],
   "env": {
-    "NODE_ENV": "production",
-    "OPENAI_API_KEY": "@openai-api-key",
-    "TWILIO_ACCOUNT_SID": "@twilio-account-sid",
-    "TWILIO_AUTH_TOKEN": "@twilio-auth-token",
-    "FIREBASE_CONFIG": "@firebase-config"
+    "NODE_ENV": "production"
   }
 } 
